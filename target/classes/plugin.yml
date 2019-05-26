@@ -1,0 +1,29 @@
+name: MangoMagic
+version: 1.0
+main: AT.MSev.MangoMagic.MangoMagic
+commands:
+   spells:
+        description: Lists all Mango Spells.
+        usage: /spells [page]
+        permission: MangoMagic.spells
+        permission-message: You don't have <permission>
+   mage:
+        description: Shows you MangoMagic stats.
+        usage: /mage
+        permission: MangoMagic.mage
+        permission-message: You don't have <permission>
+   imbue:
+        description: Imbues a stick with a spell.
+        usage: /imbue [spell]
+        permission: MangoMagic.imbue
+        permission-message: You don't have <permission>
+permissions:
+    MangoMagic.spells:
+        description: Allows you to list all spells.
+        default: true
+    MangoMagic.imbue:
+        description: Allows you to imbue sticks with spells.
+        default: true
+    MangoMagic.mage:
+        description: Allows you to view you MangoMagic stats.
+        default: true
